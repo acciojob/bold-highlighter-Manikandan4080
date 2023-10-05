@@ -1,13 +1,12 @@
+let boldEle = document.querySelectorAll('strong');
 function highlight() {
-	let boldEle = document.querySelectorAll('strong');
-	boldEle.forEach(element =>{
+	boldEle.forEach(element => {
 		 element.style.color = 'green';
 	})
 }
 
 
 function return_normal() {
-	let boldEle = document.querySelectorAll('strong');
 	boldEle.forEach(element => {
         element.style.color = 'black';
     });
