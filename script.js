@@ -1,16 +1,16 @@
 function highlight() {
-	let boldEle = document.getElementsByTagName("strong");
-	for(i in boldEle){
-		boldEle[i].style.color = 'rgb(0, 128, 0)';
-	}
+	let boldEle = document.querySelectorAll('strong');
+	boldEle.forEach(element =>{
+		 element.style.color = 'green';
+	})
 }
 
 
 function return_normal() {
-	let boldEle = document.getElementsByTagName("strong");
-	for(i in boldEle){
-		boldEle[i].style.color ='rgb(0, 0, 0)';
-	}
+	let boldEle = document.querySelectorAll('strong');
+	boldEle.forEach(element => {
+        element.style.color = 'black';
+    });
 }
 const link = document.getElementsByTagName('a');
 // const link = document.getElementByTagNmame('a');
