@@ -12,3 +12,7 @@ function return_normal() {
 		boldEle[i].style.color ='rgb(0, 0, 0)';
 	}
 }
+const link = document.getElementsByTagName('a');
+// const link = document.getElementByTagNmame('a');
+link.addEventListener('mouseover', highlight);
+link.addEventListener('mouseout', return_normal);
